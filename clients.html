@@ -58,12 +58,56 @@
 .btngo:active {
   transform: translate(5px);
   transition-duration: 0.1s;
-}   
+}
+header {
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background: var(--black);
+  padding: 1rem 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .navbar a {
+  color: rgb(247, 243, 243);
+  font-size: 2rem;
+  margin-left: 2rem;
+  text-decoration: none;
+  margin-left: 5rem;
+}
+header .navbar a:hover {
+  color: aqua;
+}
+
+#menu-bar {
+  font-size: 3rem;
+  color: rgb(247, 243, 243);
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgb(247, 243, 243);
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
 </style>
 <body>
-    <div class="Id">
-        <a href="index.html"><button class="Back" onclick="showResults('')",>Home</button></a></div> 
-        <br> <br><br><br><br>
+    
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="clients.html">Clients</a>
+            <a href="contact.html">Contact</a>
+            <a href="developers.html">Developers</a>
+        </nav>
+    </header>
+<br><br><br><br> <br><br>
     <id class="clients">
         <div class="contents">
             <center>
